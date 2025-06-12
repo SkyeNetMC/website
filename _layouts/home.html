@@ -1,0 +1,11 @@
+
+    {% include styling.html %}
+    <div class="container">
+        {% for post in site.posts %}
+            {% if post.title != "template" %}
+                {% include preview.html %}  
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    {% include header.html %}
